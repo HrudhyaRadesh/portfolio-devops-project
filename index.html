@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DevOps Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DevOps Portfolio Website</h1>
+      <p>Deployed using Git, Jenkins and Docker</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        This is a sample portfolio website created to demonstrate a complete
+        DevOps CI/CD workflow using Git, Jenkins, Docker and Nginx.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>DevOps Skills Used</h2>
+      <div class="cards">
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+        <div class="card">Jenkins</div>
+        <div class="card">Docker</div>
+        <div class="card">Nginx</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Project Workflow</h2>
+      <ol>
+        <li>Developer pushes code to GitHub</li>
+        <li>Jenkins pulls latest code</li>
+        <li>Jenkins builds Docker image</li>
+        <li>Old container is removed</li>
+        <li>New website container is deployed</li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </section>
+
+    <footer>
+      <p>© 2026 DevOps Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
