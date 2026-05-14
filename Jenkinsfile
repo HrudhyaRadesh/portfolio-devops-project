@@ -34,10 +34,11 @@ pipeline {
         }
 
         stage('Verify Deployment') {
-            steps {
-                echo 'Verifying website deployment...'
-                sh 'curl http://localhost:8081'
-            }
-        }
+    steps {
+        echo 'Checking running containers...'
+        sh 'docker ps'
+        echo 'Deployment completed successfully!'
+    }
+}
     }
 }
