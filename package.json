@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-devops-project",
+  "version": "1.0.0",
+  "description": "Multi-page portfolio website with backend deployed using Git, Jenkins and Docker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

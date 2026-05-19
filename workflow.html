@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevOps Portfolio | CI/CD Workflow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2>DevOps Portfolio</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="workflow.html">CI/CD Workflow</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <section class="page-header">
+      <h1>CI/CD Workflow</h1>
+      <p>Step-by-step automated deployment workflow used in this project.</p>
+    </section>
+
+    <section class="timeline">
+      <div class="timeline-item">
+        <h3>1. Code Development</h3>
+        <p>
+          Website files are created using HTML, CSS, and JavaScript in VS Code.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2. Git Commit</h3>
+        <p>
+          Changes are tracked using Git and committed with meaningful messages.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>3. GitHub Push</h3>
+        <p>Source code is pushed to GitHub remote repository.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>4. Jenkins Pipeline</h3>
+        <p>
+          Jenkins pulls the latest code and executes the Jenkinsfile stages.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>5. Docker Image Build</h3>
+        <p>
+          Docker builds an image using the Nginx base image and website files.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>6. Container Deployment</h3>
+        <p>Old container is removed and a new updated container is deployed.</p>
+      </div>
+    </section>
+
+    <section class="architecture">
+      <h2>Architecture Flow</h2>
+      <pre>
+Developer
+   ↓
+Git Commit
+   ↓
+GitHub Repository
+   ↓
+Jenkins Pipeline
+   ↓
+Docker Image Build
+   ↓
+Docker Container
+   ↓
+Website Running on Browser
+    </pre
+      >
+    </section>
+
+    <footer>
+      <p>© 2026 DevOps Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Portfolio | Contact</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h2>DevOps Portfolio</h2>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="workflow.html">CI/CD Workflow</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <section class="page-header">
+      <h1>Contact</h1>
+      <p>Contact form with backend API integration.</p>
+    </section>
+
+    <section class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+
+        <p><strong>Name:</strong> Hrudhya Radesh</p>
+
+        <p><strong>Email:</strong> hrudhyar002@gmail.com</p>
+
+        <p><strong>GitHub:</strong> github.com/HrudhyaRadesh</p>
+
+        <p><strong>Project:</strong> DevOps CI/CD Portfolio Website</p>
+      </div>
+
+      <form class="contact-form" onsubmit="return validateForm();">
+        <h2>Send Message</h2>
+
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <textarea id="message" placeholder="Enter your message"> </textarea>
+
+        <button type="submit">Submit</button>
+
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 DevOps Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

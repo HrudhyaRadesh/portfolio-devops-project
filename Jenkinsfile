@@ -29,16 +29,16 @@ pipeline {
         stage('Deploy New Container') {
             steps {
                 echo 'Deploying website container...'
-                sh 'docker run -d -p 8081:80 --name portfolio-container portfolio-website'
+                sh 'docker run -d -p 8081:3000 --name portfolio-container portfolio-website'
             }
         }
 
         stage('Verify Deployment') {
-    steps {
-        echo 'Checking running containers...'
-        sh 'docker ps'
-        echo 'Deployment completed successfully!'
-    }
-}
+            steps {
+                echo 'Checking running containers...'
+                sh 'docker ps'
+                echo 'Deployment completed successfully!'
+            }
+        }
     }
 }

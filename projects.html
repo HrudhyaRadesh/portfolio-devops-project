@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevOps Portfolio | Projects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2>DevOps Portfolio</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="workflow.html">CI/CD Workflow</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <section class="page-header">
+      <h1>Projects</h1>
+      <p>Interactive project section with category-based filtering.</p>
+    </section>
+
+    <section class="filter-section">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('devops')">DevOps</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('automation')">Automation</button>
+    </section>
+
+    <section class="project-grid">
+      <div class="project-card devops">
+        <h3>CI/CD Portfolio Website</h3>
+        <p>
+          Automated deployment pipeline using Git, Jenkins, Docker, and Nginx.
+        </p>
+        <span>DevOps</span>
+      </div>
+
+      <div class="project-card web">
+        <h3>Responsive Website</h3>
+        <p>Multi-page website created using HTML, CSS, and JavaScript.</p>
+        <span>Web</span>
+      </div>
+
+      <div class="project-card automation">
+        <h3>Jenkins Pipeline Automation</h3>
+        <p>
+          Pipeline stages for clone, build, stop old container, deploy, and
+          verify.
+        </p>
+        <span>Automation</span>
+      </div>
+
+      <div class="project-card devops">
+        <h3>Dockerized Static Website</h3>
+        <p>Website containerized using Docker and served through Nginx.</p>
+        <span>DevOps</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 DevOps Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

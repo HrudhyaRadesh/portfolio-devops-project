@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevOps Portfolio | About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2>DevOps Portfolio</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="workflow.html">CI/CD Workflow</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <section class="page-header">
+      <h1>About This Project</h1>
+      <p>
+        A practical DevOps project demonstrating automated deployment of a
+        website.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Project Description</h2>
+      <p>
+        This project is a multi-page portfolio website built using HTML, CSS,
+        and JavaScript. The main objective of the project is to demonstrate
+        DevOps automation using Git, Jenkins, and Docker.
+      </p>
+
+      <p>
+        The website source code is stored in GitHub. Jenkins pulls the latest
+        code from the GitHub repository, builds a Docker image using the
+        Dockerfile, removes the old container, and deploys the updated website
+        in a new Docker container.
+      </p>
+
+      <h2>Why This Project Is Useful</h2>
+      <ul>
+        <li>Shows practical understanding of CI/CD pipeline.</li>
+        <li>Demonstrates automated deployment using Jenkins.</li>
+        <li>Uses Docker for consistent containerized deployment.</li>
+        <li>Uses GitHub for source code management.</li>
+        <li>Can be easily extended and deployed to cloud platforms.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 DevOps Portfolio Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
